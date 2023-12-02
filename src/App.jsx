@@ -15,6 +15,7 @@ import img_google_scholar from './assets/googleScholar.svg';
 
 import pdf1 from './assets/pdf1_sv.pdf'
 import pdf2 from './assets/pdf2.pdf'
+import cv from './assets/Ying_Xu_CV.pdf'
 
 import design1 from './assets/design1.png'
 import design2 from './assets/design2.png'
@@ -28,10 +29,10 @@ function App() {
     contact: 'yingxu@whut.edu.com',
     location: 'Wuhan, China',
     school: 'Wuhan University of Technology',
-    github: 'https://github.com/xxx',
+    github: 'https://github.com/YingXu-Koi',
     twitter: 'https://twitter.com/Koifish2022',
     csdn: 'https://blog.csdn.net/xxx',
-    googleScholar: 'https://scholar.google.com/citations?user=xxx&hl=en',
+    googleScholar: cv,
     // slogan: 'A butterfly seeking freedom and uniqueness.',
 
   };
