@@ -222,7 +222,7 @@ function App() {
 
 
           <section className="mb-8">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Publications</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Selected Publications</h2>
             <div className="grid grid-cols-1 gap-6">
               {academicAchievements.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
