@@ -26,7 +26,7 @@ function App() {
   // 示例数据，你需要替换成自己的信息
   const personalInfo = {
     name: 'Ying Xu',
-    contact: 'yingxu@whut.edu.cn',
+    contact: 'yingxu@whut.edu.cn 现在假如要修改这里',
     location: 'Wuhan, China',
     school: 'Wuhan University of Technology',
     github: 'https://github.com/YingXu-Koi',
