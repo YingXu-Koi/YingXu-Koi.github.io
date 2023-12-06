@@ -20,6 +20,8 @@ import cv from './assets/Ying_Xu_CV.pdf'
 import design1 from './assets/design1.png'
 import design2 from './assets/design2.png'
 import design3 from './assets/design3.png'
+//import { Link } from 'react-router-dom';
+
 
 
 function App() {
@@ -67,7 +69,9 @@ function App() {
 
   const academicAchievements = [
     {
-      title: "Explore the Future Earth with Wander 2.0: AI Chatbot Driven by Knowledge-base Story Generation and Text-to-Image Model, CHI Interactivity'23",
+      title: "Explore the Future Earth with Wander 2.0: AI Chatbot Driven by Knowledge-base Story Generation and Text-to-Image Model",
+      subtitle: "CHI Interactivity'23",
+      authors: "Yuqian Sun, Ying Xu, Chenhang Cheng, Yihua Li, Chang Hee Lee, Ail Asadipour",
       image: pic1,
       description: 'We introduce Wander 2.0, an AI chatbot that co-creates sci-fi stories through knowledge-based story generation on daily communication platforms like WeChat and Discord. Using location information from Google Maps, Wander generates narrative travelogues about specific locations (e.g. Paris) through a large-scale language model (LLM). The project also includes a real-time visualization of the Human-AI collaborations on a future map. Through journeys with visitors from all over the world, Wander demonstrates how AI can serve as a subjective interface linking fiction and reality.',
       paperLink: 'https://dl.acm.org/doi/10.1145/3544549.3583931',
@@ -77,14 +81,18 @@ function App() {
 
   const Projects = [
     {
-      title: "Research on AI-powered Creativity Support Tools for Product Conceptual Design via Participatory Design 2023 Outstanding Master's Thesis. Supervisor: Zhuo Li, Wuhan University of Technology. Co-supervisor: Jiangtao Gong, Tsinghua University",
+      title: "Research on AI-powered Creativity Support Tools for Product Conceptual Design via Participatory Design",
+      subtitle: "2023 Outstanding Master's Thesis.",
+      authors:"Supervisor: Zhuo Li, Wuhan University of Technology; Co-supervisor: Jiangtao Gong, Tsinghua University",
       image: pic2,
       description: "Artificial intelligence technology has advanced significantly in recent years, particularly in generation models based on neural networks (for instance, generation adversarial networks, diffusion models). At the present time, this form of deep learning-based generation model has demonstrated significant promise in supporting designers' creative activities across a variety of domains, and research on the topic of artificial intelligence-generated content (AIGC) has drawn increasing attention. It is one of the important research directions in the academic community to develop intelligent creativity support tools for product conceptual design based on artificial intelligence technology so that they can be more widely applied in the practical work scene in the future and promote the productivity and efficiency of downstream design tasks in more product design fields. In this context, this paper takes automotive exterior design, a typical industrial product design, as an example to articulate the potential, opportunities, and challenges of introducing neural network-based generation models into creative activities in the field of product conceptual design. In this paper, an interdisciplinary research work in design, cognitive psychology, computer science, and other fields, with in-depth research in the aspects of AI-assisted product conceptual design, Human-AI interaction, Human-AI Co-creation, has been conducted.",
       paperLink: pdf1,
       // code: 'https://youtu.be/AdQXv5GswqA?si=OAFq2IyCV-mNVUUz'
     },
     {
-      title: "Chat-to-Design: AI-Assisted Personalized Fashion Design. Sinovation Ventures (Organised by Kai-Fu Lee) & Institute for AI Industry Research, Tsinghua University",
+      title: "Chat-to-Design: AI-Assisted Personalized Fashion Design.",
+      subtitle: "Sinovation Ventures; Institute for AI Industry Research, Tsinghua University",
+      authors: "Weiming Zhuang, Chongjie Ye, Ying Xu, Pengzhi Mao, Yonggang Wen",
       image: pic3,
       description: "We develop a multimedia fashion chat-bot for clothes retrival and editing. In particular, we first use NLU to capture the intention from unstructured text queries. Moreover, we employ CLIP to retrieve fashion images from DeepFashion2 dataset and adapt a pre-trained Fashion-Stylegan2 model for latent inversion. As for editing, we train a StyleFlow model to modify the generated cloth according to users’ queries. This project rank the 4st in the Fashion Track of DeeCamp 2021",
       paperLink: pdf2,
@@ -94,33 +102,39 @@ function App() {
 
   const Projects2 = [
     {
-      title: "Explainable Artificial Intelligence in Autonomous Diving. DISCOVER Lab, Institute for AI Industry Research, Tsinghua University",
+      title: "Explainable Artificial Intelligence in Autonomous Diving.",
+      subtitle: "DISCOVER Lab, Institute for AI Industry Research, Tsinghua University",
       image: pic4,
     },
     {
-      title: "Key Technologies and Developing Prospects of Vehicle Infrastructure-Coorperated Autonomous Driving (VICAD) 2.0. Apollo, Baidu & Institute for AI Industry Research, Tsinghua University",
+      title: "Key Technologies and Developing Prospects of Vehicle Infrastructure-Coorperated Autonomous Driving (VICAD) 2.0.",
+      subtitle: "Apollo, Baidu; Institute for AI Industry Research, Tsinghua University",
       image: pic5,
     },    
     {
-      title: "An Educational Game Kit for Children Learning Emotions. DISCOVER Lab, Institute for AI Industry Research, Tsinghua University",
+      title: "An Educational Game Kit for Children Learning Emotions.",
+      subtitle: "DISCOVER Lab, Institute for AI Industry Research, Tsinghua University",
       image: pic6,
     },
   ]
 
   const Design = [
     {
-      title: "E+ Smart Medical Service System Design. 2020 Selected Certificate, China Knowledge Center for Engineering Science and Technology",
+      title: "E+ Smart Medical Service System Design.",
+      subtitle: "2020 Selected Certificate, China Knowledge Center for Engineering Science and Technology",
       image: design1,
     },
     {
-      title: "Transportation Design. 2019 Zhimei Scholarship, Hubei Province Artists Association",
+      title: "Transportation Design.",
+      subtitle: "2019 Zhimei Scholarship, Hubei Province Artists Association",
       image: design2,
     },    
   ]
 
   const Activity = [
     {
-      title: '2022 Organized and hosted a virtual workshop on "Human-AI Co-creation”, Supervised by Zhuohao Wu, Associate Professor, Communication University of China, and Head of design for Airbnb China',
+      title: '2022 Organized and hosted a virtual workshop on "Human-AI Co-creation”',
+      subtitle: "Supervised by Zhuohao Wu, Associate Professor, Communication University of China, and Head of design for Airbnb China",
       image: design3,
     },   
   ]
@@ -203,7 +217,7 @@ function App() {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Education</h2>
             <li className='rounded-lg hover:bg-gradient-to-r from-primary'>{educations[0]}</li>
             <li className='rounded-lg hover:bg-gradient-to-r from-primary'>{educations[1]}</li>
-            <div className='text-lg pt-2 pb-1 font-bold'>Experience (Gap Year for Research on AI)</div>
+            <div className='text-lg pt-2 pb-1 font-bold'>Research Experience</div>
             {educations2.map((ii, index) => (
               <li key={index} className='rounded-lg hover:bg-gradient-to-r from-primary'>{ii}</li>
             ))}
@@ -226,7 +240,11 @@ function App() {
             <div className="grid grid-cols-1 gap-6">
               {academicAchievements.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
-                  <h3 className="text-lg font-semibold mb-2">{achievement.title}</h3>
+                  <a href="http://www.wander001.com/">
+                    <h3 className="text-lg hover:underline font-semibold mb-2">{achievement.title}</h3>
+                  </a>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.subtitle}</p>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.authors}</p>
                   <img
                     src={achievement.image}
                     alt={achievement.title}
@@ -262,6 +280,8 @@ function App() {
               {Projects.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
                   <h3 className="text-lg font-semibold mb-2">{achievement.title}</h3>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.subtitle}</p>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.authors}</p>
                   <img
                     src={achievement.image}
                     alt={achievement.title}
@@ -284,6 +304,7 @@ function App() {
               {Projects2.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
                   <h3 className="text-lg font-semibold mb-2">{achievement.title}</h3>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.subtitle}</p>
                   <img
                     src={achievement.image}
                     alt={achievement.title}
@@ -300,6 +321,7 @@ function App() {
               {Design.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
                   <h3 className="text-lg font-semibold mb-2">{achievement.title}</h3>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.subtitle}</p>
                   <img
                     src={achievement.image}
                     alt={achievement.title}
