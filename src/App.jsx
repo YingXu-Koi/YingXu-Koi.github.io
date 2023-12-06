@@ -29,11 +29,11 @@ function App() {
     contact: 'yingxu@whut.edu.cn',
     location: 'Wuhan, China',
     school: 'Wuhan University of Technology',
-    github: 'https://github.com/YingXu-Koi',
     twitter: 'https://twitter.com/Koifish2022',
-    csdn: 'https://blog.csdn.net/xxx',
     googleScholar: cv,
     // slogan: 'A butterfly seeking freedom and uniqueness.',
+    // github: 'https://github.com/YingXu-Koi',
+    // csdn: 'https://blog.csdn.net/xxx',
 
   };
 
@@ -48,7 +48,7 @@ function App() {
   ];
 
   const honors = [
-    '2015-2016 Chinese National Scholarship, the highest honor (top 0.1%), Rank 1st in Major',
+    '2015-2016 Chinese National Scholarship, the highest level scholarship established by the central government, Rank 1st in Major',
     '2015-2016 Pacemaker to Merit Student, Wuhan University of Technology, the highest honor (top 0.1%)',
     '2015、2016 Advanced Individual who has won "Diligence and Studious"',
     '2018 Outstanding Student Cadre',
@@ -150,7 +150,7 @@ function App() {
         <div class="container basis-1/4 bg-gradient-to-b from-gray-200 rounded-xl flex-col space-y-8 p-4 max-w-sm mx-auto">
           <img  src={avatar} className="mx-auto rounded-3xl shadow-xl" />
           <div>
-            <div className="text-2xl font-bold text-blue-400">{personalInfo.name}</div>
+            <div className="text-2xl font-bold text-teal-400">{personalInfo.name}</div>
             {/* <div className="text-md font-bold text-purple-300 mt-2">{'A butterfly seeking freedom and uniqueness'}</div> */}
           </div>
 
@@ -162,9 +162,9 @@ function App() {
               <div>{personalInfo.contact}</div>
               <div className='flex flex-row justify-center mt-4'>
                 <a href={personalInfo.googleScholar} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_google_scholar} alt='scholar'/></a>
-                <a href={personalInfo.github} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_github} alt='github'/></a>
                 <a href={personalInfo.twitter} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_twitter} alt='twitter'/></a>
-                {/* <a href={personalInfo.csdn} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_csdn} alt='csdn'/></a> */}
+                {/* <a href={personalInfo.csdn} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_csdn} alt='csdn'/></a> 
+                <a href={personalInfo.github} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_github} alt='github'/></a>*/}
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ function App() {
 
         </div>
 
-        <div class="container basis-3/4 rounded-xl text-left p-4 space-y-12 bg-gradient-to-b from-blue-100">
+        <div class="container basis-3/4 rounded-xl text-left p-4 space-y-12 bg-gradient-to-b from-gray-100">
           <section className="">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Education</h2>
             <li className='rounded-lg hover:bg-gradient-to-r from-primary'>{educations[0]}</li>
