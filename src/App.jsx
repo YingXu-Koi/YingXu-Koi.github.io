@@ -85,10 +85,13 @@ function App() {
       subtitle: "2023 Outstanding Master's Thesis.",
       authors:"Supervisor: Zhuo Li, Wuhan University of Technology; Co-supervisor: Jiangtao Gong, Tsinghua University",
       image: pic2,
-      description: "Artificial intelligence technology has advanced significantly in recent years, particularly in generation models based on neural networks (for instance, generation adversarial networks, diffusion models). At the present time, this form of deep learning-based generation model has demonstrated significant promise in supporting designers' creative activities across a variety of domains, and research on the topic of artificial intelligence-generated content (AIGC) has drawn increasing attention. It is one of the important research directions in the academic community to develop intelligent creativity support tools for product conceptual design based on artificial intelligence technology so that they can be more widely applied in the practical work scene in the future and promote the productivity and efficiency of downstream design tasks in more product design fields. In this context, this paper takes automotive exterior design, a typical industrial product design, as an example to articulate the potential, opportunities, and challenges of introducing neural network-based generation models into creative activities in the field of product conceptual design. In this paper, an interdisciplinary research work in design, cognitive psychology, computer science, and other fields, with in-depth research in the aspects of AI-assisted product conceptual design, Human-AI interaction, Human-AI Co-creation, has been conducted.",
-      paperLink: pdf1,
+      description: "Recent advances in Artificial Intelligence (AI), especially Neural-Network-based Generation Models (NNGMs) (e.g., GANs, Diffusion Models), have demonstrated great potential in enhancing the productivity and efficiency in human creative process. Our work aims to articulate the potential of NNGMs in supporting creativity practices in industrial design domain with a case of automotive exterior design. We probed about how design professionals integrated AIs into their current design practice and how they perceived non-perfect AIs by conducting semi-structured interviews and 3 co-design workshops with 22 automotive exterior design professionals. During the workshops, the professionals designed 12 co-creative AI interfaces based on 4 categories of NNGMs (Image Synthesis, Image Editing, Image-to-image Translation, 3D Generation). We concluded by providing design insights for future researchers to develop co-creative interfaces with non-perfect AIs.",
+      //paperLink: pdf1,
       // code: 'https://youtu.be/AdQXv5GswqA?si=OAFq2IyCV-mNVUUz'
     },
+  ];
+
+  const Projects1 = [
     {
       title: "Chat-to-Design: AI-Assisted Personalized Fashion Design.",
       subtitle: "Sinovation Ventures; Institute for AI Industry Research, Tsinghua University",
@@ -123,9 +126,12 @@ function App() {
       title: "E+ Smart Medical Service System Design.",
       subtitle: "2020 Selected Certificate, China Knowledge Center for Engineering Science and Technology",
       image: design1,
-    },
+    },   
+  ]
+
+  const Design1 = [
     {
-      title: "Transportation Design.",
+      title: "Transportation Design",
       subtitle: "2019 Zhimei Scholarship, Hubei Province Artists Association",
       image: design2,
     },    
@@ -243,14 +249,14 @@ function App() {
                   <a href="http://www.wander001.com/">
                     <h3 className="text-lg hover:underline font-semibold mb-2">{achievement.title}</h3>
                   </a>
-                  <p className="text-gray-600 font-semibold mb-2">{achievement.subtitle}</p>
+                  <p className="text-red-600 font-semibold mb-2">{achievement.subtitle}</p>
                   <p className="text-gray-600 font-semibold mb-2">{achievement.authors}</p>
                   <img
                     src={achievement.image}
                     alt={achievement.title}
                     className="w-auto h-auto mb-2 rounded-xl mx-auto"
                   />
-                  <p className="text-gray-600">{achievement.description}</p>
+                  <p className="text-gray-600 text-justify">{achievement.description}</p>
                   <div className='flex justify-center gap-4'>
                     <a
                       href={achievement.paperLink}
@@ -279,6 +285,24 @@ function App() {
             <div className="grid grid-cols-1 gap-6">
               {Projects.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
+                  <a href="https://academicresearch.notion.site/academicresearch/Research-on-AI-powered-Creativity-Support-Tools-for-Product-Conceptual-Design-via-Participatory-Desi-5698b857b6bd437d93edb0cba99f995a">
+                    <h3 className="text-lg hover:underline font-semibold mb-2">{achievement.title}</h3>
+                  </a>
+                  <p className="text-red-600 font-semibold mb-2">{achievement.subtitle}</p>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.authors}</p>
+                  <img
+                    src={achievement.image}
+                    alt={achievement.title}
+                    className="w-auto h-auto mb-2 rounded-xl mx-auto"
+                  />
+                  <p className="text-gray-600 text-justify">{achievement.description}</p>
+                  <div className='flex justify-center gap-4'>
+                  </div>
+                </div>
+              ))}
+
+              {Projects1.map((achievement, index) => (
+                <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
                   <h3 className="text-lg font-semibold mb-2">{achievement.title}</h3>
                   <p className="text-gray-600 font-semibold mb-2">{achievement.subtitle}</p>
                   <p className="text-gray-600 font-semibold mb-2">{achievement.authors}</p>
@@ -287,7 +311,7 @@ function App() {
                     alt={achievement.title}
                     className="w-auto h-auto mb-2 rounded-xl mx-auto"
                   />
-                  <p className="text-gray-600">{achievement.description}</p>
+                  <p className="text-gray-600 text-justify">{achievement.description}</p>
                   <div className='flex justify-center gap-4'>
                     <a
                       href={achievement.paperLink}
@@ -299,7 +323,7 @@ function App() {
                     </a>
                   </div>
                 </div>
-              ))}
+              ))}           
               
               {Projects2.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
@@ -329,6 +353,20 @@ function App() {
                   />
                 </div>
               ))}
+
+              {Design1.map((achievement, index) => (
+                <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
+                  <a href="https://academicresearch.notion.site/academicresearch/Transportation-Design-Practice-76b5113ebfb846a4a88ec3cdd7c7e190">
+                    <h3 className="text-lg hover:underline font-semibold mb-2">{achievement.title}</h3>
+                  </a>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.subtitle}</p>
+                  <img
+                    src={achievement.image}
+                    alt={achievement.title}
+                    className="w-auto h-auto mb-2 rounded-xl mx-auto"
+                  />
+                </div>
+              ))}
             </div>
           </section>
 
@@ -338,6 +376,7 @@ function App() {
               {Activity.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
                   <h3 className="text-lg font-semibold mb-2">{achievement.title}</h3>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.subtitle}</p>
                   <img
                     src={achievement.image}
                     alt={achievement.title}
