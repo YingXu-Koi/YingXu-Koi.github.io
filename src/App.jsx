@@ -40,13 +40,12 @@ function App() {
   };
 
   const educations = [
-    'Master of Philosophy in Industrial Design and Theory, Wuhan University of Technology, 2019.9-2023.6',
-    'Bachelor of Engineering in Industrial Design, Wuhan University of Technology, 2015.9-2019.6'
+    'Master of Philosophy in Industrial Design and Theory, Wuhan University of Technology, 2023',
+    'Bachelor of Engineering in Industrial Design, Wuhan University of Technology, 2019 (Rated as Class A in the national subject evaluation)'
   ];
 
   const educations2 = [
-    'Research Internship in Human-Computer Interaction, Institute for AI Industry Research, Tsinghua University 2021.10-2022.4',
-    'Certificate in Fashion Image Retrieval and Editing via Dialog, DeeCamp 2021 AI Training Camp, Sinovation Ventures, 2021.6-2021.8'
+    'Research Intern in Human-Computer Interaction (Conduct the master thesis under co-supervision), Institute for AI Industry Research, Tsinghua University 2022',
   ];
 
   const honors = [
@@ -225,7 +224,9 @@ function App() {
             <li className='rounded-lg hover:bg-gradient-to-r from-primary'>{educations[1]}</li>
             <div className='text-lg pt-2 pb-1 font-bold'>Research Experience</div>
             {educations2.map((ii, index) => (
-              <li key={index} className='rounded-lg hover:bg-gradient-to-r from-primary'>{ii}</li>
+              <a href="https://air.tsinghua.edu.cn/en/">
+              <li key={index} className='rounded-lg hover:underline hover:bg-gradient-to-r from-primary'>{ii}</li>
+            </a>
             ))}
           </section>
 
@@ -251,6 +252,7 @@ function App() {
                   </a>
                   <p className="text-red-600 font-semibold mb-2">{achievement.subtitle}</p>
                   <p className="text-gray-600 font-semibold mb-2">{achievement.authors}</p>
+                  <iframe width="auto" height="500" src="https://www.youtube.com/embed/AdQXv5GswqA?si=ah04N76gJQItLBXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                   <img
                     src={achievement.image}
                     alt={achievement.title}
