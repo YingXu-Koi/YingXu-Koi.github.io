@@ -80,7 +80,7 @@ function App() {
 
   const Projects = [
     {
-      title: "Research on AI-powered Creativity Support Tools for Product Conceptual Design via Participatory Design",
+      title: "Human-AI Co-creative System Interactive Design for Product Conceptual Design via Participatory Design",
       subtitle: "2023 Outstanding Master's Thesis.",
       authors:"Supervisor: Zhuo Li, Wuhan University of Technology; Co-supervisor: Jiangtao Gong, Tsinghua University",
       image: pic2,
@@ -287,7 +287,7 @@ function App() {
             <div className="grid grid-cols-1 gap-6">
               {Projects.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
-                  <a href="https://academicresearch.notion.site/academicresearch/Research-on-AI-powered-Creativity-Support-Tools-for-Product-Conceptual-Design-via-Participatory-Desi-5698b857b6bd437d93edb0cba99f995a">
+                  <a href="https://academicresearch.notion.site/academicresearch/Human-AI-Co-creative-System-Interactive-Design-for-Product-Conceptual-Design-via-Participatory-Desig-5698b857b6bd437d93edb0cba99f995a">
                     <h3 className="text-lg hover:underline font-semibold mb-2">{achievement.title}</h3>
                   </a>
                   <p className="text-red-600 font-semibold mb-2">{achievement.subtitle}</p>
