@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import avatar from './assets/avatar.jpg'; // 使用require或import导入图片
+import pic0 from './assets/pic0.png';
 import pic1 from './assets/pic1.png';
 import pic2 from './assets/pic2.png';
 import pic3 from './assets/pic3.png';
@@ -301,6 +302,24 @@ function App() {
               {Projects.map((achievement, index) => (
                 <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
                   <a href="https://academicresearch.notion.site/academicresearch/Human-AI-Co-creative-System-Interactive-Design-for-Product-Conceptual-Design-via-Participatory-Desig-5698b857b6bd437d93edb0cba99f995a">
+                    <h3 className="text-lg hover:underline font-semibold mb-2">{achievement.title}</h3>
+                  </a>
+                  <p className="text-red-600 font-semibold mb-2">{achievement.subtitle}</p>
+                  <p className="text-gray-600 font-semibold mb-2">{achievement.authors}</p>
+                  <img
+                    src={achievement.image}
+                    alt={achievement.title}
+                    className="w-auto h-auto mb-2 rounded-xl mx-auto"
+                  />
+                  <p className="text-gray-600 text-justify">{achievement.description}</p>
+                  <div className='flex justify-center gap-4'>
+                  </div>
+                </div>
+              ))}
+
+              {Projects0.map((achievement, index) => (
+                <div key={index} className="card rounded-lg shadow-md p-4 bg-gray-100 hover:bg-gray-300">
+                  <a href="https://logaculture.eu">
                     <h3 className="text-lg hover:underline font-semibold mb-2">{achievement.title}</h3>
                   </a>
                   <p className="text-red-600 font-semibold mb-2">{achievement.subtitle}</p>
