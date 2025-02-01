@@ -40,6 +40,10 @@ function App() {
   };
 
   const educations = [
+    'Ph.D. in Computer Science and Engineering, Interactive Technologies Institute (ITI) - Laboratório de Robótica e Sistemas de Engenharia (LARSYS) - Instituto Superior Técnico - Universidade de Lisboa, 9. 2024 - Present',
+    'Funded by FCT - Carnegie Mellon Portugal Affilitated PhD Program (2024.14125.PRT .)'
+    'Supervised by Prof. Nuno Jardim Nunes, Co-supervised by Prof. Valentina Nisi & Prof. Jessica Hammer'
+  
     'Master of Philosophy in Industrial Design and Theory, Wuhan University of Technology, 2023',
     'Bachelor of Engineering in Industrial Design, Wuhan University of Technology, 2019 (Rated as Class A in the national subject evaluation)'
   ];
@@ -90,9 +94,18 @@ function App() {
     },
   ];
 
+  const Projects0 = [
+    {
+      title: "LoGaCulture - Locative Games for Cultural Heritage",
+      subtitle: "Researcher, European Union’s Horizon Europe Framework Programme under Grant Agreement 101094036",
+      image: pic0,
+      description: "This case study will contribute to Theme 1: Ethical Design for Access and Engagement through its unique natural setting and its emphasis of conservation and attitude change. A contribution to Theme 3: Transmedia, Tourism and Social Visiting through its use of an extended transmedia experience (of which the locative heritage game is a key part) and its focus on the full tourist journey, and the case study also contributes to Theme 6: Narrative and Play through its use of games to create empathy and help tourists reflect on their own roles.",
+    },
+  ];
+  
   const Projects1 = [
     {
-      title: "Chat-to-Design: AI-Assisted Personalized Fashion Design.",
+      title: "Chat-to-Design: AI-Assisted Personalized Fashion Design",
       subtitle: "Sinovation Ventures; Institute for AI Industry Research, Tsinghua University",
       authors: "Weiming Zhuang, Chongjie Ye, Ying Xu, Pengzhi Mao, Yonggang Wen",
       image: pic3,
