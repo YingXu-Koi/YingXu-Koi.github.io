@@ -42,9 +42,8 @@ function App() {
 
   const educations = [
     'Ph.D. in Computer Science and Engineering, Interactive Technologies Institute (ITI) - Laboratório de Robótica e Sistemas de Engenharia (LARSYS) - Instituto Superior Técnico - Universidade de Lisboa, 9. 2024 - Present',
-    'Funded by FCT - Carnegie Mellon Portugal Affilitated PhD Program (2024.14125.PRT .)'
-    'Supervised by Prof. Nuno Jardim Nunes, Co-supervised by Prof. Valentina Nisi & Prof. Jessica Hammer'
-  
+    'Funded by FCT - Carnegie Mellon Portugal Affiliated PhD Program (2024.14125.PRT .)', 
+    'Supervised by Prof. Nuno Jardim Nunes, Co-supervised by Prof. Valentina Nisi & Prof. Jessica Hammer', 
     'Master of Philosophy in Industrial Design and Theory, Wuhan University of Technology, 2023',
     'Bachelor of Engineering in Industrial Design, Wuhan University of Technology, 2019 (Rated as Class A in the national subject evaluation)'
   ];
