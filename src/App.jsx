@@ -29,9 +29,9 @@ function App() {
   // 示例数据，你需要替换成自己的信息
   const personalInfo = {
     name: 'Ying Xu',
-    contact: 'yingxu@whut.edu.cn',
-    location: 'Wuhan, China',
-    school: 'Wuhan University of Technology',
+    contact: 'ying.xu@tecnico.ulisboa.pt',
+    location: 'Lisbon, Portugal',
+    school: 'Instituto Superior Técnico',
     twitter: 'https://twitter.com/Koifish2022',
     googleScholar: cv,
     // slogan: 'A butterfly seeking freedom and uniqueness.',
